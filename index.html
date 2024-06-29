@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: rgb(15 23 42);">
+    <div class="navbar">
+        <h1>Todo Manager</h1>
+    </div>
+    <div class="dashboard">
+        <div class="formArea">
+            <form action="">
+                <div class="sampleDiv">
+                    <label for="">Title</label><br>
+                    <input type="text" placeholder="Enter your title" id="todoTitle">
+                </div>
+                <div class="sampleDiv">
+                    <label for="">Description</label><br>
+                    <input type="text" placeholder="Enter Description" id="todoDescription">
+                </div>
+                <div class="sampleDiv">
+                    <button id="add">Add</button>
+                    <button id="updateChanges">Update changes</button>
+                </div>
+            </form>
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="buttons">
+            <button id="todoBtn">TODO</button>
+            <button id="completedBtn">Completed</button>
+        </div>
+        <div class="todoBucket">
+            <div class="listArea">
+                <div class="todoDetails">
+                    <p class="title">Workout</p>
+                    <p class="description">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="todoButtons">
+                    <i class="fa-solid fa-trash trash"></i>
+                    <i class="fa-solid fa-pen-to-square edit"></i>
+                    <i class="fa-solid fa-check complete"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
