@@ -24,7 +24,7 @@ addTodoBtn.addEventListener('click', (e) => {
     let description = document.querySelector('#todoDescription');
     let uniqueID = Date.now().toString(36) + Math.random().toString(36).substring(2);
 
-    if(title == '' || description == ''){
+    if(title.value == '' || description.value == ''){
         alert('Enter your task !')
     }
 
